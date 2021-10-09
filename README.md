@@ -7,6 +7,11 @@ All file paths are relative to / on filesystem.
 * /root/check_once.sh - runs once when requested and checks if ser2net is started with the correct port ( 7676 ) for zwave
 * /etc/crontabs/root - schedules /root/checks.sh to run once a minute
 
+# Effects
+* check if something listens on port 7676
+* if there's nothing started set zwave led off then sernet is started with specific parameters then set zwave led on
+* if it's started set zwave led on
+
 
 # Installation
 1. upgrade/downgrade to required firmware
