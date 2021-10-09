@@ -2,8 +2,13 @@
 
 All file paths are relative to / on filesystem.
 
+# Files
+* /root/check.sh - runs continously and runs check_once with a delay so things get restarted as fast as possible. it also checks if it's already running so it does not get started twice
+* /root/check_once.sh - runs once when requested and checks if ser2net is started with the correct port ( 7676 ) for zwave
+* /etc/crontabs/root - schedules /root/checks.sh to run once a minute
 
-# Steps
+
+# Installation
 1. upgrade/downgrade to required firmware
 2. set network config via interface or manually via ssh
 3. copy all .sh files in /usr/bin
