@@ -1,0 +1,1 @@
+*/1 * * * * /bin/sh /root/check.sh > /dev/null 2>&1
